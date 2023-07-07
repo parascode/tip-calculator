@@ -12,7 +12,7 @@ export default function App() {
   }
   let totalTip = 0;
   if (billAmount > 0) {
-    totalTip = (billAmount * ((tip1 + tip2) / 200)).toFixed(2);
+    totalTip = +(billAmount * ((tip1 + tip2) / 200)).toFixed(2);
   }
   return (
     <div>
